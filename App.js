@@ -12,8 +12,8 @@ export default function App() {
 
       <Text style={styles.text}>Hello world</Text>
 
-      <Button icon="plus" mode="contained" style={styles.button} onPress={() => alert('Insert')}>
-        Insert
+      <Button icon="cursor-default" mode="contained" style={styles.button} onPress={() => alert('Insert')}>
+        Click Me
       </Button>
     </PaperProvider>
   );

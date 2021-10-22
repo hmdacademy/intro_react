@@ -1,30 +1,21 @@
+import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Provider as PaperProvider, Appbar, Button } from 'react-native-paper';
 
 export default function App() {
   return (
-    <PaperProvider>
-      <Appbar>
-        <Appbar.BackAction onPress={() => console.log('Back')} />
-        <Appbar.Content title="Title" subtitle={'Subtitle'} />
-        <Appbar.Action icon="delete" onPress={() => console.log('Delete')} />
-      </Appbar>
-
-      <Text style={styles.text}>Open up App.js to start working on your app!</Text>
-
-      <Button icon="plus" mode="contained" style={styles.button} onPress={() => console.log('Insert')}>
-        Insert
-      </Button>
-    </PaperProvider>
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  text: {
-    marginHorizontal: 20
-  },
-  button: {
-    margin: 20
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
