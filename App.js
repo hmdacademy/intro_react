@@ -6,9 +6,8 @@ export default function App() {
   return (
     <PaperProvider>
       <Appbar.Header>
-        <Appbar.BackAction onPress={() => console.log('Back')} />
         <Appbar.Content title="Title" subtitle={'Subtitle'} />
-        <Appbar.Action icon="delete" onPress={() => console.log('Delete')} />
+        <Appbar.Action icon="delete" onPress={() => alert('Delete')} />
       </Appbar.Header>
 
       <Text style={styles.text}>Hello world</Text>
